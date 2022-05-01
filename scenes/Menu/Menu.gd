@@ -35,3 +35,9 @@ func _on_RedGenerator_button_down():
 func _on_VioletGenerator_button_down():
 	get_parent().add_child(cubomorado)
 	pass # Replace with function body.
+
+
+func _on_Reset_button_down():
+	Delete.delete()
+	
+	pass # Replace with function body.

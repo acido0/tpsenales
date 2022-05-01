@@ -18,6 +18,10 @@ config/name="ejercicio_senales"
 run/main_scene="res://scenes/Menu/Menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Delete="*res://delete.gd"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"

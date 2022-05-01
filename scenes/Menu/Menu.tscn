@@ -7,14 +7,14 @@
 [ext_resource path="res://scenes/Menu/Menu.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 759.99, 33.6962 )
+extents = Vector2( 512, 33.6962 )
 
 [node name="Menu" type="Node2D"]
 script = ExtResource( 5 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 516.671, 323.633 )
-scale = Vector2( 3.2109, 3.2109 )
+position = Vector2( 513, 323.861 )
+scale = Vector2( 3.20625, 3.20861 )
 texture = ExtResource( 1 )
 
 [node name="RedGenerator" parent="." instance=ExtResource( 3 )]
@@ -39,6 +39,7 @@ margin_bottom = 313.187
 position = Vector2( 513.885, 577.225 )
 
 [node name="Collision" type="CollisionShape2D" parent="Floor"]
+position = Vector2( -1.88501, 0 )
 shape = SubResource( 1 )
 
 [node name="CountLabel" type="Label" parent="."]
@@ -54,3 +55,4 @@ __meta__ = {
 
 [connection signal="button_down" from="RedGenerator" to="." method="_on_RedGenerator_button_down"]
 [connection signal="button_down" from="VioletGenerator" to="." method="_on_VioletGenerator_button_down"]
+[connection signal="button_down" from="Reset" to="." method="_on_Reset_button_down"]

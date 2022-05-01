@@ -6,6 +6,7 @@
 radius = 32.903
 
 [node name="BlockRed" type="RigidBody2D" groups=["blocks"]]
+position = Vector2( 871, 99 )
 gravity_scale = 2.0
 
 [node name="Sprite" type="Sprite" parent="."]

@@ -7,6 +7,8 @@ func _ready():
 
 
 func delete():
+	get_tree().call_group("blocks", "delete")
 	get_tree().reload_current_scene()
+	
 
 	pass
