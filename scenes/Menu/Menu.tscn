@@ -51,3 +51,6 @@ text = "Cantidad de Instancias:
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="button_down" from="RedGenerator" to="." method="_on_RedGenerator_button_down"]
+[connection signal="button_down" from="VioletGenerator" to="." method="_on_VioletGenerator_button_down"]
