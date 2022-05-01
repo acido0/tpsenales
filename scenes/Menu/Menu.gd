@@ -33,6 +33,9 @@ func _ready():
 	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
 	pass
 
+func delet():
+	instancesCount = 0
+	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
 
 func _on_RedGenerator_button_down():
 	get_parent().add_child(cuborojo)
@@ -48,5 +51,6 @@ func _on_VioletGenerator_button_down():
 
 func _on_Reset_button_down():
 	Delete.delete()
+	delet()
 	
 	pass # Replace with function body.
