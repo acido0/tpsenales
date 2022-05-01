@@ -23,7 +23,7 @@ func _process(delta):
 	
 func count_new_instance():
 	instancesCount +=1
-	$CountLabel.text = str(instancesCount)
+	$CountLabel.text = INSTANCES_TEXT + String(instancesCount)
 	
 	pass
 
@@ -36,11 +36,13 @@ func _ready():
 
 func _on_RedGenerator_button_down():
 	get_parent().add_child(cuborojo)
+	count_new_instance()
 	pass # Replace with function body.
 
 
 func _on_VioletGenerator_button_down():
 	get_parent().add_child(cubomorado)
+	count_new_instance()
 	pass # Replace with function body.
 
 
