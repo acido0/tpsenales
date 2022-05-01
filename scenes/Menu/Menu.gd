@@ -19,6 +19,13 @@ func generate_block():
 func _process(delta):
 	generate_block()
 	pass
+	
+	
+func count_new_instance():
+	instancesCount +=1
+	$CountLabel.text = str(instancesCount)
+	
+	pass
 
 func _ready():
 	# Inicializa el texto de "CountLabel" usando el texto
